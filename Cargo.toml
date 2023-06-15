@@ -12,7 +12,7 @@ keywords = ["http", "hyper", "hyperium"]
 categories = ["network-programming", "web-programming::http-client", "web-programming::http-server"]
 edition = "2018"
 
-publish = false # no accidents while in dev
+publish = true
 
 [dependencies]
 hyper = "=1.0.0-rc.3"
