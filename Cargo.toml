@@ -1,6 +1,6 @@
 [package]
 name = "salvo-utils"
-version = "0.0.3"
+version = "0.0.4"
 description = "hyper utilities"
 readme = "README.md"
 homepage = "https://salvo.rs"
@@ -12,10 +12,8 @@ keywords = ["http", "hyper", "hyperium"]
 categories = ["network-programming", "web-programming::http-client", "web-programming::http-server"]
 edition = "2018"
 
-publish = true
-
 [dependencies]
-hyper = "=1.0.0-rc.3"
+hyper = "=1.0.0-rc.4"
 futures-channel = "0.3"
 futures-util = { version = "0.3", default-features = false }
 http = "0.2"
@@ -31,7 +29,7 @@ tower = { version = "0.4", features = ["make", "util"] }
 
 [dev-dependencies]
 bytes = "1"
-http-body-util = "0.1.0-rc.2"
+http-body-util = "0.1.0-rc.3"
 tokio = { version = "1", features = ["macros", "test-util"] }
 
 [target.'cfg(any(target_os = "linux", target_os = "macos"))'.dev-dependencies]
