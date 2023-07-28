@@ -1,5 +1,8 @@
 #![deny(missing_docs)]
 
-//! salvo-utils
+//! hyper-util
 
+#[cfg(feature = "client")]
+pub mod client;
+mod common;
 pub mod rt;
