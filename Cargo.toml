@@ -1,6 +1,6 @@
 [package]
 name = "salvo-utils"
-version = "0.0.4"
+version = "0.0.6"
 description = "hyper utilities"
 readme = "README.md"
 homepage = "https://salvo.rs"
