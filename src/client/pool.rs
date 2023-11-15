@@ -9,7 +9,7 @@ use std::marker::Unpin;
 use std::ops::{Deref, DerefMut};
 use std::pin::Pin;
 use std::sync::{Arc, Mutex, Weak};
-use std::task::{self, Poll};
+use std::task::{self, ready, Poll};
 
 #[cfg(not(feature = "runtime"))]
 use std::time::{Duration, Instant};
@@ -19,7 +19,7 @@ use tokio::time::{Duration, Instant, Interval};
 use futures_channel::oneshot;
 use tracing::{debug, trace};
 
-use crate::common::{exec::Exec, ready};
+use crate::common::exec::Exec;
 
 // FIXME: allow() required due to `impl Trait` leaking types to this lint
 #[allow(missing_debug_implementations)]
